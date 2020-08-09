@@ -9,7 +9,7 @@ with open("README.md", "r") as f:
 
 setup(
     name = "trackrr.py",
-    version = "0.0.1"
+    version = "0.0.1",
     author = "ms7m",
     description = "An asynchronous Python API wrapper for Trackrr.",
     long_description = long_desc,
