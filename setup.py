@@ -15,7 +15,7 @@ setup(
     long_description = long_desc,
     long_description_content_type = "text/markdown",
     url = "https://github.com/TheRealKeto/Trackrr.py",
-    packages = ["trackrr_py"],
+    packages = ["trackrr", "trackrr.ext"],
     install_requires = requirements,
     python_requires = ">=3.5.3"
 )
