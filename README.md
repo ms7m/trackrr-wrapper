@@ -1,2 +1,3 @@
 # Trackrr API Wrapper.
-> https://api.trackrr.cc/redoc
+
+> https://docs.trackrr.cc

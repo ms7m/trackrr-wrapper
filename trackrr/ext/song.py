@@ -8,6 +8,10 @@ from dateutil.parser import parse
 if typing.TYPE_CHECKING:
     from datetime import datetime
 
+
+
+
+
 class Song:
     """ Represents a song object from the Trackrr API """
     def __init__(self, data, service="Default"):
@@ -60,3 +64,16 @@ class Song:
     def to_dict(self) -> dict:
         """ Returns the song object with info about the requested song """
         return self.data
+
+class TrackrrResult:
+    def __init__(self, list_of_songs: typing.List[Song], services_returned: typing.List[str]) -> None:
+        self._list_of_songs = list_of_songs
+        self._services_returned = services_returned
+
+    @property
+    def results(self) -> "typing.List[Song]":
+        return self._list_of_songs
+
+    @property
+    def services_returned(self) -> "typing.List[str]":
+        return self._services_returned
